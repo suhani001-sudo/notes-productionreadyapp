@@ -33,7 +33,7 @@ function Notes() {
 
   return (
     <div className='notes-container'>
-         <p>{undefined.name}</p> 
+         {/* <p>{undefined.name}</p>  */}
       {notes.map(note => (
         <div key={note._id} className='note-card'>
           <p className='note-text'>{note.text}</p>
