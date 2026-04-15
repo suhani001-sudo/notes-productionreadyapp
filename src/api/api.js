@@ -11,7 +11,7 @@ export async function getNotes() {
           { _id: 3, text: "Practice production build" },
           {_id: 4, text: "Using Mock data currently"}
         ]);
-      }, 1000);
+      }, 1500);
     });
   } catch (error) {
     logError(error, "getNotes");

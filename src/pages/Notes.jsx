@@ -20,6 +20,7 @@ function Notes () {
 
   return (
     <div className='notes-container'>
+      {/* <p>{undefined.name}</p> */}
       {error && (
         <div className='error'>
           <p>{error}</p>
