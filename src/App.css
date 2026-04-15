@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+/* RESET */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;              
+  justify-content: center;  
+  align-items: center;        
+  height: 100vh;              
+}
+
+/* CONTAINER */
+.app-container {
+  width: 400px;
+  margin: 40px auto;
+  padding: 20px;
+  border: 2px solid black;       
+  border-radius: 10px;           
+  background: white;  
+}
+
+/* TITLE */
+h1 {
+  font-size: 24px;
+  color:#4e0101;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(66, 2, 2);
+  padding-bottom: 10px;
+}
+
+
+/* BUTTON */
+button {
+  background: rgb(83, 28, 28);
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #333;
+}
+
+/* INPUT */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid black;
+}
+
+/* ERROR TEXT */
+.error {
+  color: black;
+  border: 1px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #f8f8f8;
+}
+
+/* LOADER (SKELETON) */
+.loader-container {
+  padding: 10px 0;
+}
+
+.skeleton-card {
+  background: #806e6e;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  animation: pulse 1.5s infinite ease-in-out;
+  border: 1px solid #291f1f;
+}
+
+.skeleton-line {
+  height: 10px;
+  background: #ddd;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.skeleton-line.short {
+  width: 60%;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+/* NOTES CONTAINER */
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* NOTE CARD */
+.note-card {
+  border: 1px solid black;
+  padding: 14px;
+  border-radius: 8px;
+  background: rgb(255, 222, 222);
+  box-shadow: 2px 3px 4px black;
+  transition: all 0.2s ease;
+}
+
+/* HOVER EFFECT */
+.note-card:hover {
+  background: #f5f5f5;
+  transform: translateY(-2px);
+}
+
+/* TEXT */
+.note-text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
